@@ -1,14 +1,15 @@
 name = "fariha-portfolio"
-type = "webpack"  # or remove if you're not using a bundler
-account_id = "75b137055d9d3f0df4ad70c77bdc34"
-zone_id = "32f9bc549c606a96fbf8c8e2f7721f12"
 compatibility_date = "2025-07-07"
+account_id = "75b137055d9d3f0df4ad70c77bdc34"
+# type and zone_id are not needed for static sites
 
 [site]
 bucket = "html5up-highlights-fariha"
+# remove entry-point, it's not needed
 
-# Optional for custom domain
-# route = "https://www.fariha-portfolio.com/*"
+[env.production]
+route = "https://www.fariha-portfolio.com/*"
+zone_id = "32f9bc549c606a96fbf8c8e2f7721f12"
 
 [observability.logs]
 enabled = false
