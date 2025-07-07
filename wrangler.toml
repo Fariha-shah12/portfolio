@@ -12,3 +12,10 @@ entry-point = "."
 # workers_dev = false
 # route = "https://www.fariha-portfolio.com/*"
 # zone_id = "32fb9c549c066a96fbfb8ce2f7721f12"
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = false
+
+
+
+
