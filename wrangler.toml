@@ -1,0 +1,14 @@
+name = "fariha-portfolio"
+type = "webpack"  # or "javascript" if no build tool used
+
+account_id = "<your_cloudflare_account_id>"
+compatibility_date = "2025-07-07"
+
+[site]
+bucket = "./"  # or path to your static site folder like "dist" or "build"
+entry-point = "."
+
+# optional if you're using a custom domain
+# workers_dev = false
+# route = "https://www.fariha-portfolio.com/*"
+# zone_id = "<your_zone_id>"
