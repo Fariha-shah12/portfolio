@@ -5,7 +5,7 @@ account_id = "75b13730554d9d3f0df4ad70c77bdc34"
 compatibility_date = "2025-07-07"
 
 [site]
-bucket = "./"  # or path to your static site folder like "dist" or "build"
+bucket = "./html5up-highlights-fariha"  # or path to your static site folder like "dist" or "build"
 entry-point = "."
 
 # optional if you're using a custom domain
