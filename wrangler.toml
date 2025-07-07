@@ -1,7 +1,7 @@
 name = "fariha-portfolio"
 type = "webpack"  # or "javascript" if no build tool used
 
-account_id = "<your_cloudflare_account_id>"
+account_id = "75b13730554d9d3f0df4ad70c77bdc34"
 compatibility_date = "2025-07-07"
 
 [site]
@@ -11,4 +11,4 @@ entry-point = "."
 # optional if you're using a custom domain
 # workers_dev = false
 # route = "https://www.fariha-portfolio.com/*"
-# zone_id = "<your_zone_id>"
+# zone_id = "32fb9c549c066a96fbfb8ce2f7721f12"
