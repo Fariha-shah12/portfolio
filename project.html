@@ -1,329 +1,167 @@
-<!DOCTYPE HTML>
-<!--
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Fariha Shah Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<style>
-		.navbar {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			background: linear-gradient(to right, #2c3e50, #34495e);
-			padding: 15px 40px;
-			color: #fff;
-		}
-
-		.site-title {
-			font-size: 24px;
-			font-weight: bold;
-		}
-
-		.nav-links a {
-			color: #fff;
-			margin-left: 25px;
-			text-decoration: none;
-			font-size: 18px;
-			transition: color 0.3s;
-		}
-
-		.nav-links a:hover {
-			color: #0ee6bbf9;
-		}
-	</style>
+<meta charset="utf-8" />
+<title>Projects — Fariha Shah</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-<body class="is-preload">
+<body>
 
-	<!-- Custom Header Navigation -->
-	<header class="navbar">
-		<div class="site-title">Fariha's Portfolio Website</div>
-		<nav class="nav-links">
-			<a href="index.html">About</a>
-			<a href="project.html">Projects</a>
-			<a href="blog.html">Blogs</a>
-			<a href="resume.html">Resume</a>
-			<a href="achievements.html">Achievements</a>
-		</nav>
-	</header>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-brand" href="index.html">fariha_shah<span class="paren">()</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">about</a></li>
+      <li><a href="project.html" class="active">projects</a></li>
+      <li><a href="blog.html">blog</a></li>
+      <li><a href="resume.html">resume</a></li>
+      <li><a href="achievements.html">achievements</a></li>
+    </ul>
+  </div>
+</nav>
 
-	<!-- Header -->
-	<section id="header">
-		<header class="major">
-			<div style="text-align: center;"></div>
-			<h1>Explore the Projects</h1>
-			<p>
-				Dive into a curated collection of real-world data projects from predictive
-				<br> modeling and machine learning to end-to-end ETL pipelines.
-			</p>
-		</header>
-		<div class="container">
-			<ul class="actions special">
-				<li><a href="#p0" class="button primary scrolly">Begin</a></li>
-			</ul>
-		</div>
-	</section>
+<header class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Projects</div>
+    <h1 style="font-size:clamp(30px,4.5vw,44px);">Real datasets. Real pipelines.</h1>
+    <p class="lede">Predictive modeling, end-to-end ETL, and applied ML — nine projects spanning retail pricing, semantic search, public health, and climate data.</p>
+  </div>
+</header>
 
+<section class="reveal">
+  <div class="wrap">
+    <div class="project-grid">
 
-		<!-- Project 1: Sentiment Classifier -->
-	<section id="p0" class="main special">
-		<div class="container">
-			<span class="image fit primary"></span>
-			<div class="content">
-				<header class="major">
-					<h2>Sentiment Classifier — DistilBERT Fine-Tuned on Amazon Reviews</h2>
-				</header>
-				<p>
-					A sentiment analysis model fine-tuned on Amazon reviews using DistilBERT, achieving high accuracy in classifying product reviews as positive or negative.
-				</p>
-				<div style="text-align: center; margin: 20px 0;">
-					<img src="images/positive-sentiment.png" alt="Positive Sentiment Diagram" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-					</div>
-				<div style="text-align: center;">
-					<a href="https://github.com/Fariha-shah12/sentiment-classifier.git" target="_blank" class="button primary">View on GitHub</a>
-				</div>
-			</div>
-			<a href="#p1" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'sentiment-classifier'</b>;</div>
+        <div class="pimg"><img src="images/positive-sentiment.png" alt="Positive sentiment classification output diagram"></div>
+        <div class="pbody">
+          <h3>Sentiment Classifier</h3>
+          <p>DistilBERT fine-tuned on Amazon reviews to classify product sentiment as positive or negative, reaching high accuracy on held-out review data.</p>
+          <div class="tag-row"><span class="tag">DistilBERT</span><span class="tag">NLP</span><span class="tag">Python</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/sentiment-classifier" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-	<!-- Project 2: Retail Price Forecasting -->
-	<section id="p1" class="main special">
-		<div class="container">
-			<span class="image fit primary"></span>
-			<div class="content">
-				<header class="major">
-					<h2>Retail Price Forecasting — Walmart vs Kroger</h2>
-				</header>
-				<p>
-					An end-to-end data pipeline that scrapes daily grocery prices from Walmart and Kroger across Washington State, forecasts 14-day price trends using Facebook Prophet, and visualizes competitor price gaps on an interactive Streamlit dashboard — all powered by AWS.
-				</p>
-				<div style="text-align: center; margin: 20px 0;">
-					<img src="images/Architecture-Diagram.png" alt="Architecture Diagram" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-					<img src="images/Pricing-Gap-for-oliveoil.png" alt="Pricing Gap for Olive Oil" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-				</div>
-				<div style="text-align: center;">
-					<a href="https://github.com/Fariha-shah12/retail-price-forecasting.git" target="_blank" class="button primary">View on GitHub</a>
-				</div>
-			</div>
-			<a href="#p2" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'retail-price-forecasting'</b>;</div>
+        <div class="pimg"><img src="images/Pricing-Gap-for-oliveoil.png" alt="Retail price forecasting dashboard showing pricing gap for olive oil"></div>
+        <div class="pbody">
+          <h3>Retail Price Forecasting — Walmart vs Kroger</h3>
+          <p>End-to-end pipeline scraping daily grocery prices across Washington State, forecasting 14-day trends with Facebook Prophet, and visualizing competitor gaps on a live Streamlit dashboard — all powered by AWS.</p>
+          <div class="tag-row"><span class="tag">AWS</span><span class="tag">Prophet</span><span class="tag">Streamlit</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/retail-price-forecasting" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-	<!-- Project 2: HN Semantic Search Engine -->
-	<section id="p2" class="main special">
-		<div class="container">
-			<span class="image fit primary"></span>
-			<div class="content">
-				<header class="major">
-					<h2>HN Semantic Search Engine</h2>
-				</header>
-				<p>
-					Search 1,400+ Hacker News stories using natural language — powered by AWS Bedrock Titan Embeddings + pgvector.
-				</p>
-				<div style="text-align: center; margin: 20px 0;">
-					<img src="images/search_demo.png" alt="Search Demo" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-				</div>
-				<div style="text-align: center;">
-					<a href="https://github.com/Fariha-shah12/hn-semantic-search.git" target="_blank" class="button primary">View on GitHub</a>
-				</div>
-			</div>
-			<a href="#p3" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'hn-semantic-search'</b>;</div>
+        <div class="pimg"><img src="images/search_demo.png" alt="Semantic search demo interface over Hacker News stories"></div>
+        <div class="pbody">
+          <h3>HN Semantic Search Engine</h3>
+          <p>Search 1,400+ Hacker News stories using natural language, powered by AWS Bedrock Titan Embeddings and pgvector similarity search on RDS PostgreSQL.</p>
+          <div class="tag-row"><span class="tag">Bedrock</span><span class="tag">pgvector</span><span class="tag">Lambda</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/hn-semantic-search" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-	<!-- Project 3: Subway Foot Traffic -->
-	<section id="p3" class="main special">
-		<div class="container">
-			<span class="image fit primary"></span>
-			<div class="content">
-				<header class="major">
-					<h2>Identifying Marketing Effectiveness For Forecasting Subway Foot Traffic in NYC</h2>
-				</header>
-				<p>
-					This project investigates how different marketing channels impact subway store visit trends in NYC.
-					Using a combination of machine learning techniques (XGBoost Regressor, SHAP),
-					we aim to provide data-driven insights for optimizing advertising strategies.
-				</p>
-				<div style="text-align: center; margin: 20px 0;">
-					<img src="images/foot-traffic.webp" alt="Foot Traffic" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-				</div>
-				<div style="text-align: center;">
-					<a href="https://github.com/Fariha-shah12/Identifying-Marketing-Effectiveness-For-Forecasting-Subway-Foot-Traffic-in-NYC.git" target="_blank" class="button primary">View on GitHub</a>
-				</div>
-			</div>
-			<a href="#p4" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'subway-foot-traffic'</b>;</div>
+        <div class="pimg"><img src="images/foot-traffic.webp" alt="Subway foot traffic marketing effectiveness analysis"></div>
+        <div class="pbody">
+          <h3>Marketing Effectiveness for Subway Foot Traffic (NYC)</h3>
+          <p>Investigated how different marketing channels impact subway store visit trends in NYC using XGBoost Regressor and SHAP for data-driven advertising insights.</p>
+          <div class="tag-row"><span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">scikit-learn</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/Identifying-Marketing-Effectiveness-For-Forecasting-Subway-Foot-Traffic-in-NYC" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-	<!-- Project 4: AI-Powered Data Quality Monitor -->
-	<section id="p4" class="main special">
-		<div class="container">
-			<div class="content">
-				<header class="major">
-					<h2>AI-Powered Data Quality Monitor</h2>
-				</header>
-				<p>
-					An intelligent data quality solution that automatically detects missing values, duplicates, and outliers in datasets. It provides clear, plain-English explanations of data issues and delivers actionable recommendations to help users quickly identify, understand, and resolve data quality problems.
-				</p>
-			</div>
-			<div style="text-align: center; margin: 20px 0;">
-				<img src="images/Architecture-Diagram-for-AI-Powered-Data-Quality-Monitor.png" alt="AI Data Quality Monitor Architecture" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-			</div>
-			<div style="text-align: center;">
-				<a href="https://github.com/Fariha-shah12/aws-analytics-genai-llm-workshop.git" target="_blank" class="button primary">View on GitHub</a>
-			</div>
-			<a href="#p4" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'ai-data-quality-monitor'</b>;</div>
+        <div class="pimg"><img src="images/Architecture-Diagram-for-AI-Powered-Data-Quality-Monitor.png" alt="Architecture diagram for AI-powered data quality monitor"></div>
+        <div class="pbody">
+          <h3>AI-Powered Data Quality Monitor</h3>
+          <p>Automatically detects missing values, duplicates, and outliers in datasets, explains issues in plain English, and recommends fixes — built on AWS Lambda, the Claude API, and Streamlit.</p>
+          <div class="tag-row"><span class="tag">Claude API</span><span class="tag">Lambda</span><span class="tag">Streamlit</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/aws-analytics-genai-llm-workshop" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-	<!-- Project 5: Bird Species Classification -->
-	<section id="p5" class="main special">
-		<div class="container">
-			<span class="image fit primary"></span>
-			<div class="content">
-				<header class="major">
-					<h2>Bird Species Classification using Convolutional Neural Networks</h2>
-				</header>
-				<p>
-					In this project, a CNN-based neural network is developed to classify bird species in Seattle
-					using spectrograms generated from bird call recordings. The model was trained for binary (e.g., American Crow vs. House Sparrow) and multi-class classification (12 species total), and evaluated using external test clips. The dataset was sourced from Xeno-canto, and spectrograms served as input to the model for effective sound recognition.
-				</p>
-				<div style="text-align: center; margin: 20px 0;">
-					<img src="images/bird_species_ML.jpg" alt="Bird Species Classification" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-				</div>
-				<div style="text-align: center;">
-					<a href="https://github.com/Fariha-shah12/Statistical-Machine-Learning/tree/406efc6eb80817a8157a3c67bf03c2b3f0b90ef2/Bird%20Species%20Classification%20using%20Convolutional%20Neural%20Networks%20(CNNs)" target="_blank" class="button primary">View on GitHub</a>
-				</div>
-			</div>
-			<a href="#p5" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'bird-species-cnn'</b>;</div>
+        <div class="pimg"><img src="images/bird_species_ML.jpg" alt="Bird species classification using convolutional neural networks"></div>
+        <div class="pbody">
+          <h3>Bird Species Classification (CNN)</h3>
+          <p>A CNN trained on spectrograms from bird call recordings to classify species around Seattle — binary and 12-class multi-class classification, sourced from Xeno-canto.</p>
+          <div class="tag-row"><span class="tag">CNN</span><span class="tag">Audio ML</span><span class="tag">TensorFlow</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/Statistical-Machine-Learning/tree/406efc6eb80817a8157a3c67bf03c2b3f0b90ef2/Bird%20Species%20Classification%20using%20Convolutional%20Neural%20Networks%20(CNNs)" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-	<!-- Project 6: Diabetes Prediction -->
-	<section id="p6" class="main special">
-		<div class="container">
-			<div class="content">
-				<header class="major">
-					<h2>Health Behavior and Diabetes Prediction using SVM</h2>
-				</header>
-				<p>
-					This project explores the relationship between health behaviors, demographic factors, and the risk of diabetes using Support Vector Machine (SVM) models. The analysis is based on data from the National Health Interview Survey (NHIS).
-					We evaluated the performance of Linear, Polynomial, and RBF kernel SVMs to classify individuals as diabetic or non-diabetic.
-				</p>
-			</div>
-			<div style="text-align: center; margin: 20px 0;">
-				<img src="images/Diabetes-Prediction-Using-Machine-Learning.webp" alt="Diabetes Prediction" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-			</div>
-			<div style="text-align: center;">
-				<a href="https://github.com/Fariha-shah12/Statistical-Machine-Learning/tree/406efc6eb80817a8157a3c67bf03c2b3f0b90ef2/Health%20Behavior%20and%20Diabetes%20Prediction%20using%20Support%20Vector%20Machines%20(SVMs)" target="_blank" class="button primary">View on GitHub</a>
-			</div>
-			<a href="#p6" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'diabetes-prediction-svm'</b>;</div>
+        <div class="pimg"><img src="images/Diabetes-Prediction-Using-Machine-Learning.webp" alt="Diabetes prediction using SVM models"></div>
+        <div class="pbody">
+          <h3>Health Behavior &amp; Diabetes Prediction (SVM)</h3>
+          <p>Explored health behaviors and demographic factors driving diabetes risk using NHIS data, comparing Linear, Polynomial, and RBF kernel SVMs.</p>
+          <div class="tag-row"><span class="tag">SVM</span><span class="tag">scikit-learn</span><span class="tag">NHIS Data</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/Statistical-Machine-Learning/tree/406efc6eb80817a8157a3c67bf03c2b3f0b90ef2/Health%20Behavior%20and%20Diabetes%20Prediction%20using%20Support%20Vector%20Machines%20(SVMs)" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-	<!-- Project 7: Youth Substance Use -->
-	<section id="p7" class="main special">
-		<div class="container">
-			<div class="content">
-				<header class="major">
-					<h2>Youth Substance Use Prediction with Machine Learning</h2>
-				</header>
-				<p>
-					This project leverages data science and machine learning techniques to explore and predict patterns
-					of youth substance use (Marijuana and Alcohol).
-					It includes binary classification, multi-class classification, and regression modeling using scikit-learn.
-				</p>
-			</div>
-			<div style="text-align: center; margin: 20px 0;">
-				<img src="images/substance_use.jpg" alt="Youth Substance Use" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-			</div>
-			<div style="text-align: center;">
-				<a href="https://github.com/Fariha-shah12/Statistical-Machine-Learning/tree/406efc6eb80817a8157a3c67bf03c2b3f0b90ef2/Predicting%20Youth%20Substance%20Use%20with%20Machine%20Learning" target="_blank" class="button primary">View on GitHub</a>
-			</div>
-			<a href="#p7" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'youth-substance-use'</b>;</div>
+        <div class="pimg"><img src="images/substance_use.jpg" alt="Youth substance use prediction with machine learning"></div>
+        <div class="pbody">
+          <h3>Youth Substance Use Prediction</h3>
+          <p>Explores and predicts patterns of youth marijuana and alcohol use through binary classification, multi-class classification, and regression modeling with scikit-learn.</p>
+          <div class="tag-row"><span class="tag">Classification</span><span class="tag">Regression</span><span class="tag">scikit-learn</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/Statistical-Machine-Learning/tree/406efc6eb80817a8157a3c67bf03c2b3f0b90ef2/Predicting%20Youth%20Substance%20Use%20with%20Machine%20Learning" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-	<!-- Project 8: Flood Vulnerability -->
-	<section id="p8" class="main special">
-		<div class="container">
-			<span class="image fit primary"></span>
-			<div class="content">
-				<header class="major">
-					<h2>Flood Vulnerability in Asian Countries</h2>
-				</header>
-				<p>
-					Floods are one of the most frequent and devastating natural disasters in Asia. This project aims to predict the number of flood disasters using machine learning regressors,
-					forecast future flood trends using SARIMA (Seasonal ARIMA), and analyze key disaster-related indicators and their relationships to flood frequency.
-				</p>
-				<div style="text-align: center; margin: 20px 0;">
-					<img src="images/flood-disaster.png" alt="Flood Disaster" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-				</div>
-				<div style="text-align: center;">
-					<a href="https://github.com/Fariha-shah12/Modeling-Flood-Vulnerability-in-Asian-Countries-through-ML-and-Time-Series-Analysis-" target="_blank" class="button primary">View on GitHub</a>
-				</div>
-			</div>
-		</div>
-	</section>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'flood-vulnerability-asia'</b>;</div>
+        <div class="pimg"><img src="images/flood-disaster.png" alt="Flood vulnerability analysis in Asian countries"></div>
+        <div class="pbody">
+          <h3>Flood Vulnerability in Asian Countries</h3>
+          <p>Predicts flood disaster frequency using ML regressors, forecasts trends with SARIMA (Seasonal ARIMA), and analyzes key disaster-related indicators across Asia.</p>
+          <div class="tag-row"><span class="tag">SARIMA</span><span class="tag">Time Series</span><span class="tag">Regression</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/Modeling-Flood-Vulnerability-in-Asian-Countries-through-ML-and-Time-Series-Analysis-" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-	<!-- Footer -->
-	<section id="footer">
-		<footer>
-			<header class="major">
-				<div style="text-align: center;"></div>
-				<h1>Let's Connect</h1>
-			</header>
-			<ul class="icons">
-				<li>
-					<a href="https://linkedin.com/in/shahfariha" target="_blank" class="icon brands fa-linkedin">
-						<span class="label">LinkedIn</span>
-						<h3>LinkedIn</h3>
-					</a>
-				</li>
-				<li>
-					<a href="https://medium.com/@FarihaShah" target="_blank" class="icon brands fa-medium">
-						<span class="label">Medium</span>
-						<h3>Medium</h3>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/Fariha-shah12" target="_blank" class="icon brands fa-github">
-						<span class="label">GitHub</span>
-						<h3>GitHub</h3>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:fariha_shah@outlook.com" class="icon solid fa-envelope">
-						<span class="label">Email</span>
-						<h3>Email</h3>
-					</a>
-				</li>
-				<br>
-				<li><span class="label">Seattle, Washington, USA</span></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Fariha's Data Journal</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				<br>
-				<li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
-			</ul>
-		</footer>
-	</section>
+    </div>
+  </div>
+</section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+<section id="contact" class="reveal">
+  <div class="wrap">
+    <div class="contact-panel">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's build something with data.</h2>
+      <div class="contact-grid">
+        <ul class="social-list">
+          <li><a href="https://linkedin.com/in/shahfariha" target="_blank" rel="noopener">LinkedIn <i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Fariha-shah12" target="_blank" rel="noopener">GitHub <i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://medium.com/@FarihaShah" target="_blank" rel="noopener">Medium <i class="fa-brands fa-medium"></i></a></li>
+          <li><a href="mailto:fariha_shah@outlook.com">Email <i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+        <form method="POST" action="https://formspree.io/f/meokyllq">
+          <div class="form-field"><input type="text" name="name" placeholder="Name" required /></div>
+          <div class="form-field"><input type="email" name="email" placeholder="Email" required /></div>
+          <div class="form-field"><textarea name="message" placeholder="Message" rows="3" required></textarea></div>
+          <button type="submit" class="btn btn-outline" style="border-color:rgba(255,255,255,.3); color:#fff; width:100%; justify-content:center;">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
+<footer class="site-footer"><p>&copy; Fariha Shah — Seattle, WA</p></footer>
+<script src="js/script.js"></script>
 </body>
 </html>

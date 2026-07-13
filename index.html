@@ -1,231 +1,228 @@
-<!DOCTYPE HTML>
-<!--
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Fariha Shah Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<style>
-		.navbar {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			background: linear-gradient(to right, #2c3e50, #34495e);
-			padding: 15px 40px;
-			color: #fff;
-		}
-
-		.site-title {
-			font-size: 24px;
-			font-weight: bold;
-		}
-
-		.nav-links a {
-			color: #fff;
-			margin-left: 25px;
-			text-decoration: none;
-			font-size: 18px;
-			transition: color 0.3s;
-		}
-
-			.nav-links a:hover {
-				color: #1abc9c;
-			}
-	</style>
+<meta charset="utf-8" />
+<title>Fariha Shah — Data Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Fariha Shah — Data Engineer based in Seattle, WA. Building data pipelines, ETL systems, and applied ML on AWS." />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-<body class="is-preload">
-	<!-- Custom Header Navigation -->
-	<header class="navbar">
-		<div class="site-title">Fariha's Portfolio Website</div>
-		<nav class="nav-links">
-			<a href="index.html">About</a>
-			<!-- <a href="#experience">Work Experience</a> -->
-			<a href="project.html">Projects</a>
-			<a href="blog.html">Blogs</a>
-			<a href="resume.html">Resume</a>
-			<a href="achievements.html">Achievements</a>
-		</nav>
-	</header>
-	<!-- Header -->
-	<section id="header">
-		<header class="major">
-			<div style="text-align: center;">
-				<img src="images/ProfilePic.jpg" alt="Fariha Shah" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 8px rgba(0,0,0,0.2); margin-bottom: 15px;">
-			</div>
-			<h1>Fariha Shah</h1>
-			<p>A Data Scientist - Data Engineer</p>
-		</header>
-		<div class="container">
-			<ul class="actions special">
-				<li><a href="#one" class="button primary scrolly">Begin</a></li>
-			</ul>
-		</div>
-	</section>
+<body>
 
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-brand" href="index.html">fariha_shah<span class="paren">()</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">about</a></li>
+      <li><a href="project.html">projects</a></li>
+      <li><a href="blog.html">blog</a></li>
+      <li><a href="resume.html">resume</a></li>
+      <li><a href="achievements.html">achievements</a></li>
+    </ul>
+  </div>
+</nav>
 
-	<!-- One -->
-	<section id="one" class="main special">
-		<div class="container">
-			<!--<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>-->
-			<div class="content">
-				<header class="major">
-					<h2>Who I am</h2>
-				</header>
-				<p>
-					Hi, I'm Fariha — Originally belong to <b>Pakistan</b> and <b>MS Data Science Graduate from Seattle University, Washington.</b>
-					With a strong foundation in Data Engineering and a deep interest in analytics,
-					I thrive on building scalable <b>data pipelines, </b>crafting meaningful <b>visualizations</b>,
-					applying <b>machine learning</b>, and turning raw information into impactful insights.
-					<br>
-					When I’m not working with data, 
-					I enjoy <b>cycling through nature, capturing scenic moments,
-					 exploring new cuisines, and solving Sudoku puzzles,</b>
-					  these hobbies help me stay grounded and curious. 
-					  I’ve also recently gotten into <b>reading Stoic philosophy</b> because its honest,
-					   practical life lessons really resonate with me.
-				</p>
-					
-			</div>
-			<a href="#two" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status-pill"><span class="dot"></span>Open to Data Engineer roles</span>
+      <h1>Fariha Shah</h1>
+      <div class="role">Data Engineer · Data Scientist</div>
+      <p class="lede">I build data pipelines, wrangle messy datasets into something trustworthy, and turn that into insight — on AWS, in SQL, in Python. Based in Seattle, WA, by way of Pakistan.</p>
+      <div class="btn-row">
+        <a href="project.html" class="btn btn-primary">View projects</a>
+        <a href="assets/Fariha_Resume_DE.pdf" class="btn btn-outline" download>Download résumé</a>
+        <a href="mailto:fariha_shah@outlook.com" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
+    <div>
+      <div class="schema-card">
+        <div class="sc-head"><span></span><span></span><span></span></div>
+        <pre><span class="sc-com">-- schema.sql</span>
+<span class="sc-kw">CREATE TABLE</span> <span class="sc-name">fariha_shah</span> (
+  role        VARCHAR   <span class="sc-str">'Data Engineer'</span>,
+  location    VARCHAR   <span class="sc-str">'Seattle, WA'</span>,
+  origin      VARCHAR   <span class="sc-str">'Pakistan'</span>,
+  education   VARCHAR   <span class="sc-str">'MS Data Science'</span>,
+  experience  INT       <span class="sc-str">4</span> <span class="sc-com">-- +years</span>,
+  status      ENUM      <span class="sc-str">'open_to_work'</span>
+);
 
-	<!-- Two -->
-	<section id="two" class="main special">
-		<div class="container">
-			<!--<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>-->
-			<div class="content">
-				<header class="major">
-					<h2>Stuff I do</h2>
-				</header>
-				<p>
-					I build, I write, I explore. Whether it's crafting data-driven solutions, sharing insights through blogs, capturing the beauty of nature, or showcasing my professional journey—this space is where my curiosity meets creativity.
-				</p>
-				<ul class="icons-grid">
-					<li>
-						<a href="project.html" style="text-decoration: none; color: inherit;">
-							<span class="icon solid major fa-code"></span>
-							<h3>Projects</h3>
-						</a>
-					</li>
+<span class="sc-kw">ALTER TABLE</span> fariha_shah
+  <span class="sc-kw">ADD PRIMARY KEY</span> (curiosity);</pre>
+      </div>
+      <div class="terminal-line"><span class="prompt">$</span> <span id="terminal-text"></span><span class="cursor"></span></div>
+    </div>
+  </div>
+</header>
 
-					<li>
-						<a href="blog.html" style="text-decoration: none; color: inherit;">
-						
-						<span class="icon solid major fa-pencil-alt"></span>
-						<h3>Blogging</h3>
-						</a>
-					</li>
-					<li>
-						<a href="https://pin.it/4YD73c3Rs" target="_blank" style="text-decoration: none; color: inherit;">
-							<span class="icon solid major fa-camera-retro"></span>
-							<h3>Photography</h3>
-						</a>
-					</li>
-					<li>
-						<a href="resume.html" target="_blank" style="text-decoration: none; color: inherit;">
-							<span class="icon solid major fa-file"></span>
-							<h3>Resume</h3>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<a href="#footer" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow">Who I am</div>
+      <h2>Data, decoded — then delivered.</h2>
+      <p>Hi, I'm Fariha. I'm an MS Data Science graduate from Seattle University with a background in data engineering — I spent over four years building and maintaining production data systems before going back for my Master's to deepen my machine learning and analytics skillset.</p>
+      <p>I like the part of the job most people skip past: figuring out exactly what a question is really asking before writing a single line of SQL or Python. I thrive on building scalable data pipelines, crafting visualizations that actually explain something, and applying machine learning to turn raw, messy data into decisions people can act on.</p>
+      <p>Outside of data, I'm usually cycling somewhere scenic, chasing a good photo, trying a new cuisine, or working through a Sudoku. I've also gotten into Stoic philosophy lately — the practical, no-nonsense kind of wisdom fits how I like to approach problems, too.</p>
+    </div>
+    <div class="fact-table mono">
+      <div class="fact-row"><span class="k">location</span><span class="v">Seattle, WA</span></div>
+      <div class="fact-row"><span class="k">education</span><span class="v">MS Data Science, Seattle U</span></div>
+      <div class="fact-row"><span class="k">background</span><span class="v">Data Engineering, 4+ yrs</span></div>
+      <div class="fact-row"><span class="k">focus</span><span class="v">Pipelines · ETL · ML · AWS</span></div>
+      <div class="fact-row"><span class="k">currently</span><span class="v">#100DaysOfSQL</span></div>
+      <div class="fact-row"><span class="k">status</span><span class="v">Open to work</span></div>
+    </div>
+  </div>
+</section>
 
+<!-- SKILLS -->
+<section id="skills" class="tight reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Toolkit</div>
+      <h2>What I build with</h2>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-card">
+        <h4>Languages &amp; Data</h4>
+        <div class="chip-row">
+          <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PySpark</span>
+          <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">pandas</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>Cloud &amp; Pipelines</h4>
+        <div class="chip-row">
+          <span class="chip">AWS Lambda</span><span class="chip">S3</span><span class="chip">EventBridge</span>
+          <span class="chip">RDS</span><span class="chip">SageMaker</span><span class="chip">QuickSight</span>
+          <span class="chip">GitHub Actions</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>ML &amp; Analytics</h4>
+        <div class="chip-row">
+          <span class="chip">scikit-learn</span><span class="chip">CatBoost</span><span class="chip">Prophet</span>
+          <span class="chip">Bedrock / Titan Embeddings</span><span class="chip">pgvector</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>Full-Stack &amp; Tools</h4>
+        <div class="chip-row">
+          <span class="chip">.NET</span><span class="chip">AngularJS</span><span class="chip">Streamlit</span>
+          <span class="chip">RESTful APIs</span><span class="chip">Power Automate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- FEATURED PROJECTS -->
+<section id="work" class="reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Selected work</div>
+      <h2>A few things I've built</h2>
+    </div>
+    <div class="project-grid">
 
-	<!-- Footer -->
-	 
-	<section id="footer">
-		
-		<div class="container">
-			<header class="major">
-				<h2>You Can Find Me Here</h2>
-			</header>
-			<ul class="icons-grid">
-				<li>
-					<a href="https://linkedin.com/in/shahfariha" target="_blank" class="icon brands fa-linkedin">
-						<span class="label">LinkedIn</span>
-						<h3>LinkedIn</h3>
-					</a>
-				</li>
-				<li>
-					<a href="https://medium.com/@FarihaShah" target="_blank" class="icon brands fa-medium">
-						<span class="label">Medium</span>
-						<h3>Medium</h3>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/Fariha-shah12" target="_blank" class="icon brands fa-github">
-						<span class="label">GitHub</span>
-						<h3>GitHub</h3>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:fariha_shah@outlook.com" class="icon solid fa-envelope">
-						<span class="label">Email</span>
-						<h3>Email</h3>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="container">
-		<header class="major">
-			<h2>Get in touch</h2>
-		</header>
-		<form method="POST" action="https://formspree.io/f/meokyllq">
-			<div class="row gtr-uniform">
-			<div class="col-6 col-12-xsmall">
-				<input type="text" name="name" id="name" placeholder="Name" required />
-			</div>
-			<div class="col-6 col-12-xsmall">
-				<input type="email" name="email" id="email" placeholder="Email" required />
-			</div>
-			<div class="col-12">
-				<textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
-			</div>
-			<div class="col-12">
-				<ul class="actions special">
-				<li><input type="submit" value="Send Message" class="primary" /></li>
-				</ul>
-			</div>
-			</div>
-		</form>
-		</div>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'retail-price-forecasting'</b>;</div>
+        <div class="pimg"><img src="images/Pricing-Gap-for-oliveoil.png" alt="Retail price forecasting dashboard showing pricing gap for olive oil"></div>
+        <div class="pbody">
+          <h3>Retail Price Forecasting</h3>
+          <p>End-to-end pipeline scraping daily Walmart &amp; Kroger prices, forecasting 14-day trends with Facebook Prophet, and visualizing competitor gaps on a live Streamlit dashboard — under 4% MAPE.</p>
+          <div class="tag-row"><span class="tag">AWS</span><span class="tag">Prophet</span><span class="tag">Streamlit</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/retail-price-forecasting" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-		<footer>
-			<ul class="icons">
-				<li><span class="label">Seattle, Washington, USA</span></li>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'hn-semantic-search'</b>;</div>
+        <div class="pimg"><img src="images/search_demo.png" alt="Semantic search demo interface over Hacker News stories"></div>
+        <div class="pbody">
+          <h3>HN Semantic Search Engine</h3>
+          <p>Natural-language search over 1,400+ Hacker News stories, powered by AWS Bedrock Titan Embeddings and pgvector similarity search on RDS PostgreSQL — fully serverless.</p>
+          <div class="tag-row"><span class="tag">Bedrock</span><span class="tag">pgvector</span><span class="tag">Lambda</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/hn-semantic-search" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
-			</ul>
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'ai-data-quality-monitor'</b>;</div>
+        <div class="pimg"><img src="images/Architecture-Diagram-for-AI-Powered-Data-Quality-Monitor.png" alt="Architecture diagram for AI-powered data quality monitor"></div>
+        <div class="pbody">
+          <h3>AI-Powered Data Quality Monitor</h3>
+          <p>Detects missing values, duplicates, and outliers automatically, then explains what's wrong in plain English and recommends a fix — built on the Claude API and Streamlit.</p>
+          <div class="tag-row"><span class="tag">Claude API</span><span class="tag">Lambda</span><span class="tag">Streamlit</span></div>
+          <a class="plink" href="https://github.com/Fariha-shah12/aws-analytics-genai-llm-workshop" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
 
+      <div class="pcard">
+        <div class="pquery"><b>SELECT</b> * FROM projects WHERE name = <b>'costco-capstone'</b>;</div>
+        <div class="pimg"><img src="images/CSE_Projects_Day.jpg" alt="Presenting the Costco capstone project at CSE Projects Day"></div>
+        <div class="pbody">
+          <h3>Costco Pricing &amp; Recommendation Engine</h3>
+          <p>Capstone built with Costco Wholesale: modeled cross-price elasticity across product categories and built a constrained volume-optimization engine to guide pricing decisions — presented at CSE Projects Day.</p>
+          <div class="tag-row"><span class="tag">AWS</span><span class="tag">OLS Regression</span><span class="tag">QuickSight</span></div>
+          <a class="plink" href="project.html">See full write-up</a>
+        </div>
+      </div>
 
-			<ul class="copyright">
-				<li>&copy; Fariha's Data Journal</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				<br>
-				<li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
-			</ul>
-		</footer>
-	</section>
+    </div>
+    <div style="text-align:center; margin-top:36px;">
+      <a href="project.html" class="btn btn-outline">View all projects →</a>
+    </div>
+  </div>
+</section>
 
+<!-- CURRENTLY / SQL -->
+<section class="tight reveal">
+  <div class="wrap">
+    <div class="fact-table" style="background:var(--surface-alt); border:1px solid var(--line); border-radius:12px; padding:26px 28px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px;">
+      <div>
+        <div class="eyebrow" style="margin-bottom:8px;">Right now</div>
+        <p style="margin:0; color:var(--ink); font-weight:500;">Running a public <span class="mono" style="color:var(--blue);">#100DaysOfSQL</span> series — breaking down one real interview-style query a day on DataExpert.io before writing any code.</p>
+      </div>
+      <a href="https://linkedin.com/in/shahfariha" target="_blank" rel="noopener" class="btn btn-primary">Follow along on LinkedIn</a>
+    </div>
+  </div>
+</section>
 
-	<!-- Scripts -->
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <div class="wrap">
+    <div class="contact-panel">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's build something with data.</h2>
+      <p class="lede" style="color:#B7C2D8;">Open to Data Engineer and analytics roles — reach out directly or send a message below.</p>
+      <div class="contact-grid">
+        <ul class="social-list">
+          <li><a href="https://linkedin.com/in/shahfariha" target="_blank" rel="noopener">LinkedIn <i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Fariha-shah12" target="_blank" rel="noopener">GitHub <i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://medium.com/@FarihaShah" target="_blank" rel="noopener">Medium <i class="fa-brands fa-medium"></i></a></li>
+          <li><a href="mailto:fariha_shah@outlook.com">Email <i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+        <form method="POST" action="https://formspree.io/f/meokyllq">
+          <div class="form-field"><input type="text" name="name" placeholder="Name" required /></div>
+          <div class="form-field"><input type="email" name="email" placeholder="Email" required /></div>
+          <div class="form-field"><textarea name="message" placeholder="Message" rows="3" required></textarea></div>
+          <button type="submit" class="btn btn-outline" style="border-color:rgba(255,255,255,.3); color:#fff; width:100%; justify-content:center;">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+<footer class="site-footer">
+  <p>&copy; Fariha Shah — Seattle, WA</p>
+</footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,288 +1,113 @@
-<!DOCTYPE HTML>
-<!--
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Fariha Shah Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<style>
-		.navbar {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			background: linear-gradient(to right, #2c3e50, #34495e);
-			padding: 15px 40px;
-			color: #fff;
-		}
-
-		.site-title {
-			font-size: 24px;
-			font-weight: bold;
-		}
-
-		.nav-links a {
-			color: #fff;
-			margin-left: 25px;
-			text-decoration: none;
-			font-size: 18px;
-			transition: color 0.3s;
-		}
-
-			.nav-links a:hover {
-				color: #0ee6bbf9;
-			}
-	</style>
+<meta charset="utf-8" />
+<title>Blog — Fariha Shah</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-<body class="is-preload">
+<body>
 
-	<!-- Custom Header Navigation -->
-	<header class="navbar">
-		<div class="site-title">Fariha's Portfolio Website</div>
-		<nav class="nav-links">
-			<a href="index.html">About</a>
-			<!-- <a href="#experience">Work Experience</a> -->
-			<a href="project.html">Projects</a>
-			<a href="blog.html">Blogs</a>
-			<a href="resume.html">Resume</a>
-			<a href="achievements.html">Achievements</a>
-		</nav>
-	</header>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-brand" href="index.html">fariha_shah<span class="paren">()</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">about</a></li>
+      <li><a href="project.html">projects</a></li>
+      <li><a href="blog.html" class="active">blog</a></li>
+      <li><a href="resume.html">resume</a></li>
+      <li><a href="achievements.html">achievements</a></li>
+    </ul>
+  </div>
+</nav>
 
-	<!-- Header -->
-	<section id="header">
-		<header class="major">
-			<div style="text-align: center;"></div>
-			<h1>Explore my Medium Articles</h1>
-			<p>
-				Dive into a curated collection of technical concepts made simple
-				<br>  explained in a way that anyone can understand,
-				no matter their background or domain
-			</p>
-		</header>
-		<div class="container">
-			<ul class="actions special">
-				<li><a href="#b0" class="button primary scrolly">Begin</a></li>
-			</ul>
-		</div>
-	</section>
-	<!-- One -->
-	<section id="b0" class="main special">
-		<div class="container">
-			<span class="image fit primary">
-			</span>
-			<div class="content">
-				<header class="major">
-					<h2>The Mirror Maze Problem in Python</h2>
-				</header>
-				<p>
-					"Learn how Python’s data structures and control flow can be used to implement a fun and challenging maze solver for a mirror maze scenario."
-				</p>
-				<div style="text-align: center; margin: 20px 0;">
-					<img src="images\mirror-maze.png" alt="Project Preview" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-				</div>
-				<!-- GitHub Button -->
-				<div style="text-align: center;">
-					<a href="https://medium.com/@FarihaShah/the-mirror-maze-problem-in-python-5d9320ed03ad" target="_blank" class="button primary">View on Medium</a>
-				</div>
-			</div>
+<header class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Writing</div>
+    <h1 style="font-size:clamp(30px,4.5vw,44px);">Notes from the data journal</h1>
+    <p class="lede">Technical concepts made simple — explained in a way that anyone can follow, no matter their background.</p>
+  </div>
+</header>
 
-			<a href="#b1" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
-	</section>
-	<!-- One -->
-	<section id="b1" class="main special">
-		<div class="container">
-			<span class="image fit primary">
-			</span>
-			<div class="content">
-				<header class="major">
-					<h2>Mapreduce is now Easy to Understand</h2>
-				</header>
-				<p>
-					In the world of big data and distributed systems, Map-Reduce stands out as a fundamental model for processing massive datasets. It efficiently divides tasks across a cluster, enabling parallel execution and aggregation.
-				</p>
-				<div style="text-align: center; margin: 20px 0;">
-					<img src="images\map-reduce.png" alt="Project Preview" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-				</div>
-				<!-- GitHub Button -->
-				<div style="text-align: center;">
-					<a href="https://medium.com/@FarihaShah/mapreduce-made-easy-82201044d43d" target="_blank" class="button primary">View on Medium</a>
-				</div>
-			</div>
+<section class="reveal">
+  <div class="wrap">
+    <div class="blog-list">
 
-			<a href="#b2" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <a class="blog-row" href="https://medium.com/@FarihaShah/24-challenges-sql-advent-calendar-2024-90aa86bf5688" target="_blank" rel="noopener">
+        <span class="bnum mono">01</span>
+        <span class="btitle">24 Challenges — SQL Advent Calendar 2024</span>
+        <span class="barrow">Read →</span>
+      </a>
 
-	<!-- One -->
-	<!-- two -->
+      <a class="blog-row" href="https://medium.com/dev-genius/dimensional-data-modeling-for-scds-in-postgres-52369c21c184" target="_blank" rel="noopener">
+        <span class="bnum mono">02</span>
+        <span class="btitle">Dimensional Data Modeling for SCDs in Postgres</span>
+        <span class="barrow">Read →</span>
+      </a>
 
-	<section id="b2" class="main special">
-		<div class="container">
-			<span class="image fit primary">
-			</span>
-			<div class="content">
-				<header class="major">
-					<h2>24 challenges SQL Advent Calendar 2024</h2>
-				</header>
-				<p>
-					Here, you will find my solutions to the SQL Advent Calendar Challenge 2024, created by Dawn Choo. This challenge consists of 24 engaging SQL problems that were designed to be solved daily from December 1st to Christmas Eve.
-				</p>
-				<!-- GitHub Button -->
-				<div style="text-align: center;">
-					<a href="https://medium.com/@FarihaShah/24-challenges-sql-advent-calendar-2024-90aa86bf5688" target="_blank" class="button primary">View on Medium</a>
-				</div>
-			</div>
+      <a class="blog-row" href="https://medium.com/@FarihaShah/mapreduce-made-easy-82201044d43d" target="_blank" rel="noopener">
+        <span class="bnum mono">03</span>
+        <span class="btitle">MapReduce Is Now Easy to Understand</span>
+        <span class="barrow">Read →</span>
+      </a>
 
-			<a href="#b3" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <a class="blog-row" href="https://medium.com/@FarihaShah/amazon-quicksight-to-visualize-netflix-data-and-trends-f7ee0c019750" target="_blank" rel="noopener">
+        <span class="bnum mono">04</span>
+        <span class="btitle">Amazon QuickSight to Visualize Netflix Data and Trends</span>
+        <span class="barrow">Read →</span>
+      </a>
 
-	<!-- two -->
-	<!-- three -->
-	<section id="b3" class="main special">
-		<div class="container">
-			<div class="content">
-				<header class="major">
-					<h2>Dimensional Data Modeling for SCDs in Postgres</h2>
-				</header>
-				<p>
-					This article provides an overview of how Slowly Changing Dimensions (SCD) can be analyzed using dimensional data modeling.
-				</p>
-			</div>
+      <a class="blog-row" href="https://medium.com/@FarihaShah/the-mirror-maze-problem-in-python-5d9320ed03ad" target="_blank" rel="noopener">
+        <span class="bnum mono">05</span>
+        <span class="btitle">The Mirror Maze Problem in Python</span>
+        <span class="barrow">Read →</span>
+      </a>
 
-			<!-- GitHub Button -->
-			<div style="text-align: center;">
-				<a href="https://medium.com/dev-genius/dimensional-data-modeling-for-scds-in-postgres-52369c21c184" target="_blank" class="button primary">View on Medium</a>
-			</div>
-			<a href="#b4" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+      <a class="blog-row" href="https://medium.com/@FarihaShah/check-if-string-is-the-subsequence-of-another-string-094219a39f09" target="_blank" rel="noopener">
+        <span class="bnum mono">06</span>
+        <span class="btitle">Check If a String Is the Subsequence of Another String</span>
+        <span class="barrow">Read →</span>
+      </a>
 
+      <a class="blog-row" href="https://medium.com/@FarihaShah/career-transition-journey-from-non-tech-to-tech-my-journey-from-petroleum-engineer-to-software-c35e6f85fd81" target="_blank" rel="noopener">
+        <span class="bnum mono">07</span>
+        <span class="btitle">Career Transition: From Petroleum Engineer to Software Engineer</span>
+        <span class="barrow">Read →</span>
+      </a>
 
-	<!-- three -->
-	<section id="b4" class="main special">
-		<div class="container">
-			<div class="content">
-				<header class="major">
-					<h2>Amazon QuickSight to visualize Netflix data and trends</h2>
-				</header>
-				<p>This article explain how you can utilise Amazon S3 bucket to visualise Netflix dataset and trends.</p>
-			</div>
-			<div style="text-align: center; margin: 20px 0;">
-				<img src="images\quick-sight-amz.webp" alt="Project Preview" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-			</div>
-			<!-- GitHub Button -->
-			<div style="text-align: center;">
-				<a href="https://medium.com/@FarihaShah/amazon-quicksight-to-visualize-netflix-data-and-trends-f7ee0c019750" target="_blank" class="button primary">View on Medium</a>
-			</div>
-			<a href="#b6" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="https://medium.com/@FarihaShah" target="_blank" rel="noopener" class="btn btn-outline">All articles on Medium →</a>
+    </div>
+  </div>
+</section>
 
+<section id="contact" class="reveal">
+  <div class="wrap">
+    <div class="contact-panel">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's build something with data.</h2>
+      <div class="contact-grid">
+        <ul class="social-list">
+          <li><a href="https://linkedin.com/in/shahfariha" target="_blank" rel="noopener">LinkedIn <i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Fariha-shah12" target="_blank" rel="noopener">GitHub <i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://medium.com/@FarihaShah" target="_blank" rel="noopener">Medium <i class="fa-brands fa-medium"></i></a></li>
+          <li><a href="mailto:fariha_shah@outlook.com">Email <i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+        <form method="POST" action="https://formspree.io/f/meokyllq">
+          <div class="form-field"><input type="text" name="name" placeholder="Name" required /></div>
+          <div class="form-field"><input type="email" name="email" placeholder="Email" required /></div>
+          <div class="form-field"><textarea name="message" placeholder="Message" rows="3" required></textarea></div>
+          <button type="submit" class="btn btn-outline" style="border-color:rgba(255,255,255,.3); color:#fff; width:100%; justify-content:center;">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-
-
-
-	<section id="b6" class="main special">
-		<div class="container">
-			<div class="content">
-				<header class="major">
-					<h2>Check if String is the Subsequence of Another String</h2>
-				</header>
-				<p>This article explains, step by step, a paper-based approach to determine whether one string is a subsequence of another using the efficient two-pointer technique. It breaks down the logic behind the solution and provides insights into tackling this common LeetCode problem.	</p>
-			</div>
-
-			<!-- GitHub Button -->
-			<div style="text-align: center;">
-				<a href="https://medium.com/@FarihaShah/check-if-string-is-the-subsequence-of-another-string-094219a39f09" target="_blank" class="button primary">View on Medium</a>
-			</div>
-			<a href="#footer" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
-
-	<!-- <section id="b7" class="main special"> -->
-		<!-- <div class="container">
-			<div class="content">
-				<header class="major">
-					<h2>“Career Transition Journey from Non-Tech to Tech: My Journey from Petroleum Engineer to Software Engineer. ”</h2>
-				</header>
-				<p>In this article, I share my personal journey transitioning from a petroleum engineering background to a career in software and data science. I reflect on challenges, lessons learned, and offer encouragement to others navigating a non-tech to tech career path.</p>
-			</div> -->
-
-			<!-- Medium Button -->
-			<!-- <div style="text-align: center;">
-				<a href="https://medium.com/@FarihaShah/career-transition-journey-from-non-tech-to-tech-my-journey-from-petroleum-engineer-to-software-c35e6f85fd81" target="_blank" class="button primary">View on Medium</a>
-			</div>
-			<a href="#footer" class="goto-next scrolly">Next</a>
-		</div> -->
-	<!-- </section> -->
-	<!-- Footer --><section id="footer">
-
-
-		<footer>
-			<header class="major">
-				<div style="text-align: center;">
-				</div>
-				<h1>Let's Connect</h1>
-			</header>
-			<ul class="icons">
-				<li>
-					<a href="https://linkedin.com/in/shahfariha" target="_blank" class="icon brands fa-linkedin">
-						<span class="label">LinkedIn</span>
-						<h3>LinkedIn</h3>
-					</a>
-				</li>
-				<li>
-					<a href="https://medium.com/@FarihaShah" target="_blank" class="icon brands fa-medium">
-						<span class="label">Medium</span>
-						<h3>Medium</h3>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/Fariha-shah12" target="_blank" class="icon brands fa-github">
-						<span class="label">GitHub</span>
-						<h3>GitHub</h3>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:fariha_shah@outlook.com" class="icon solid fa-envelope">
-						<span class="label">Email</span>
-						<h3>Email</h3>
-					</a>
-				</li>
-				<br>
-				<li><span class="label">Seattle, Washington, USA</span></li>
-
-			</ul>
-
-
-			<ul class="copyright">
-				<li>&copy; Fariha's Data Journal</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				<br>
-				<li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
-
-			</ul>
-		</footer>
-	</section>
-
-
-	<!-- Scripts -->
-
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+<footer class="site-footer"><p>&copy; Fariha Shah — Seattle, WA</p></footer>
+<script src="js/script.js"></script>
 </body>
 </html>
